@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South Indian Restaurant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background: linear-gradient(90deg, #ff6347, #ffd700);
+            color: #fff;
+            padding: 20px 10px;
+            text-align: center;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #333;
+        }
+        .hero {
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+            background-image: url("images.html/restaurant.jpg");
+            background-position: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        main {
+            padding: 20px;
+            background-color: #fdf4e3;
+        }
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .menu-item {
+            background: #fff;
+            padding: 20px;
+            border: 2px solid #ffd700;
+            border-radius: 10px;
+            width: 220px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+        .menu-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .menu-item h3 {
+            margin-bottom: 10px;
+        }
+        .menu-item a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 5px 10px;
+            background: #ff6347;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+        .menu-item a:hover {
+            background: #333;
+        }
+
+        .dish {
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .dish img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
+
+        .dish h2 {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .about-section, .contact-section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .about-section {
+            background: #fff2cc;
+        }
+        .contact-section {
+            background: #e0f7fa;
+        }
+        .order a {
+            text-decoration: none;
+            color: white;
+            background-color: #ff5722;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #ff5722;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>South Indian Delights</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="hero">
+        <a href="#menu" class="btn">Explore Menu</a>
+    </section>
+    <main>
+        <section id="menu" class="menu-section">
+        <h2 style="text-align: center;">Our Menu</h2>
+        <section class="menu">
+                <div class="menu-item">
+            <article class="dish">
+                <a href="" target="_blank">
+                    <img src="images.html/masaladosa.jpg" alt="Masala Dosa">
+                </a>
+                <h2>Masala Dosa - ₹120</h2>
+                <div class="order">
+                    <a href="" target="_blank">Order Now</a>
+                </div>
+            </article></div>
+            <div class="menu-item">
+            <article class="dish">
+                <a href="" target="_blank">
+                    <img src="images.html/bisibelebath.JPG" alt="Bisi Bele Bath">
+                </a>
+                <h2>Bisi Bele Bath - ₹150</h2>
+                <div class="order">
+                    <a href="" target="_blank">Order Now</a>
+                </div>
+            </article></div>
+            <div class="menu-item">
+            <article class="dish">
+                <a href="" target="_blank">
+                    <img src="images.html/neerdosa.jpg" alt="Neer Dosa">
+                </a>
+                <h2>Neer Dosa - ₹100</h2>
+                <div class="order">
+                    <a href="" target="_blank">Order Now</a>
+                </div>
+            </article></div>
+            <div class="menu-item">
+ <article class="dish">
+    <a href="" target="_blank">
+        <img src="images.html/idli.jpg" alt="Idli">
+    </a>
+    <h2>Idli - ₹50</h2>
+    <div class="order">
+        <a href="" target="_blank">Order Now</a>
+    </div>
+</article></div>
+<div class="menu-item">
+    <article class="dish">
+        <a href="" target="_blank">
+            <img src="images.html/pongal.jpg" alt="Pongal">
+        </a>
+        <h2>Pongal - ₹80</h2>
+        <div class="order">
+            <a href="" target="_blank">Order Now</a>
+        </div>
+    </article></div>
+    <div class="menu-item">
+    <article class="dish">
+        <a href="" target="_blank">
+            <img src="images.html/uttapam.jpg" alt="Uttapam">
+        </a>
+        <h2>Uttapam - ₹70</h2>
+        <div class="order">
+            <a href="" target="_blank">Order Now</a>
+        </div>
+    </article></div>
+    <div class="menu-item">
+        <article class="dish">
+            <a href="" target="_blank">
+                <img src="images.html/appam.jpg" alt="Appam">
+            </a>
+            <h2>Appam - ₹80</h2>
+            <div class="order">
+                <a href="" target="_blank">Order Now</a>
+            </div>
+        </article></div>
+<div class="menu-item">
+<article class="dish">
+    <a href="" target="_blank">
+        <img src="images.html/chettinadchicken.jpg" alt="Chettinad Chicken">
+    </a>
+    <h2>Chettinad Chicken - ₹150</h2>
+    <div class="order">
+        <a href="" target="_blank">Order Now</a>
+    </div>
+</article></div>
+<div class="menu-item">
+<article class="dish">
+    <a href="" target="_blank">
+        <img src="images.html/biryani.jpg" alt="Hyderabadi Biryani">
+    </a>
+    <h2>Biryani - ₹180</h2>
+    <div class="order">
+        <a href="" target="_blank">Order Now</a>
+    </div>
+</article></div>
+<div class="menu-item">
+<article class="dish">
+    <a href="" target="_blank">
+        <img src="images.html/chillichicken.jpeg" alt="Andhra Chilli Chicken">
+    </a>
+    <h2>Chilli Chicken - ₹150</h2>
+    <div class="order">
+        <a href="" target="_blank">Order Now</a>
+    </div>
+</article></div>
+</section>
+</section>
+</main>
+<section id="about" class="about-section">
+    <h2>About Us</h2>
+    <p>We bring you the essence of South Indian cuisine, crafted with traditional recipes and the finest ingredients.</p>
+    </section>
+    
+    <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Email: contact@southindiandelights.com</p>
+    <p>Phone: +91 89707 45292</p>
+    <p>Address: 123 South Indian Lane, Bengaluru, India</p>
+    </section>
+<footer>
+<p>© 2024 South Indian Delights. All Rights Reserved.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+    <title>Pete's Pizza Delivery</title>
+</head>
+<style>
+    body{
+        background-image: url("images.html/pp.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+h1{
+    color:rgb(116, 5, 5);
+    width:500px;
+    font-size:50px;
+}
+h2{
+    color:black;
+    width:270px;
+    font-size:30px;
+}
+p{
+    font-size:15px;
+}
+</style>
+<body>
+    <h1 align="center">Pete's Pizza Delivery</h1>
+    <h2 align="center">Online Order Form</h2>
+    <form method="" class="form">
+        *Name:<input type="text" name="name"required><br>
+        *Telephone:<input type="number" name="number"required><br>
+        *Address:<input type="text" name="address" required><br>
+        *Email:<input type="text" name="email"required><br>
+        *Town/City:<input type="text" name="town/city"required><br>
+        *Postcode:<input type="number" name="postcode"required><br>
+        <p>*required fields</p>
+        <h3>Topping</h3>
+        <input type="radio" name="topping">Margherita<br>
+        <input type="radio" name="topping">Four Seasons<br>
+        <input type="radio" name="topping">Meat Feast<br>
+        <h3>Size</h3>
+        <input type="radio" name="size">Small<br>
+        <input type="radio" name="size">Medium<br>
+        <input type="radio" name="size">Large<br>
+        <h3>Extras</h3>
+        <input type="radio" name="extras">Mushrooms<br>
+        <input type="radio" name="extras">Green peppers<br>
+        <input type="radio" name="extras">Anchovies<br>
+        <input type="radio" name="extras">Extra cheese<br>
+        Preferred delivery time:
+        <input type="time" id="delivery_time" name="delivery_time"><br><br>
+
+        Delivery instructions:<br>
+        <textarea id="instructions" name="instructions" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="Submit order">
+
+    </form>
+</body>
